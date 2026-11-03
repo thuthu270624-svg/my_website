@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio cá nhân | Trần Anh Thư</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container nav-container">
+        <a href="#home" class="logo">MyPortfolio</a>
+
+        <nav class="nav">
+          <a href="#home">Trang chủ</a>
+          <a href="#about">Giới thiệu</a>
+          <a href="#skills">Kỹ năng</a>
+          <a href="#projects">Dự án</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <button id="theme-toggle" class="theme-btn" type="button">
+          Chế độ tối
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- TRANG CHỦ -->
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="hello">XIN CHÀO, MÌNH LÀ</p>
+            <h1>Trần Anh Thư</h1>
+            <h2>Sinh viên Công nghệ thông tin</h2>
+            <p>
+              Chào mừng bạn đến với Portfolio cá nhân của mình. Đây là nơi giới
+              thiệu bản thân, kỹ năng và những dự án mình đã thực hiện trong quá
+              trình học tập.
+            </p>
+
+            <a href="#projects" class="primary-btn"> Xem dự án của tôi </a>
+          </div>
+
+          <div class="hero-avatar">
+            <div class="avatar-circle">AT</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GIỚI THIỆU -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">Giới thiệu bản thân</h2>
+
+          <div class="about-content">
+            <div class="about-text">
+              <h3>Xin chào! Mình là Anh Thư.</h3>
+              <p>
+                Mình là sinh viên ngành Công nghệ thông tin, yêu thích thiết kế
+                website và lập trình. Mình luôn muốn học hỏi những kiến thức mới
+                để nâng cao kỹ năng và phát triển bản thân.
+              </p>
+              <p>
+                Mục tiêu của mình là trở thành một lập trình viên Front-end, có
+                thể xây dựng những website đẹp mắt, thân thiện và dễ sử dụng.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Thông tin cá nhân</h3>
+              <p><strong>Họ và tên:</strong> Trần Anh Thư</p>
+              <p><strong>Ngành học:</strong> Công nghệ thông tin</p>
+              <p><strong>Sở thích:</strong> Thiết kế web, học lập trình</p>
+              <p><strong>Định hướng:</strong> Front-end Developer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KỸ NĂNG -->
+      <section id="skills" class="section section-light">
+        <div class="container">
+          <h2 class="section-title">Kỹ năng của tôi</h2>
+          <p class="section-description">
+            Những kiến thức và công nghệ mình đang học tập, thực hành.
+          </p>
+
+          <div id="skill-list" class="skills-list">
+            <p>Đang tải kỹ năng...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DỰ ÁN -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Dự án đã thực hiện</h2>
+          <p class="section-description">
+            Một số bài tập và dự án mình đã thực hiện trong quá trình học.
+          </p>
+
+          <div id="project-list" class="projects-list">
+            <p>Đang tải dữ liệu dự án...</p>
+          </div>
+
+          <p id="error-message" class="error-message"></p>
+        </div>
+      </section>
+
+      <!-- LIÊN HỆ -->
+      <section id="contact" class="section section-light">
+        <div class="container">
+          <h2 class="section-title">Liên hệ với tôi</h2>
+          <p class="section-description">
+            Hãy gửi lời nhắn nếu bạn muốn kết nối với mình.
+          </p>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="fullname">Họ và tên</label>
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Nhập họ và tên"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Nhập email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Nội dung</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Nhập nội dung liên hệ"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="primary-btn">Gửi liên hệ</button>
+
+            <p id="form-message" class="form-message"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Trần Anh Thư. Portfolio cá nhân.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

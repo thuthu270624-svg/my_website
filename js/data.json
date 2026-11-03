@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Website Portfolio cá nhân",
+      "description": "Thiết kế website giới thiệu bản thân, thông tin cá nhân và kỹ năng lập trình.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "id": 2,
+      "name": "Trang giới thiệu bản thân",
+      "description": "Xây dựng trang web giới thiệu học vấn, sở thích và mục tiêu nghề nghiệp.",
+      "technologies": ["HTML5", "SCSS", "Responsive Design"]
+    },
+    {
+      "id": 3,
+      "name": "Dự án quản lý công việc",
+      "description": "Thiết kế giao diện quản lý và theo dõi công việc cá nhân.",
+      "technologies": ["HTML", "CSS", "JavaScript"]
+    }
+  ]
+}

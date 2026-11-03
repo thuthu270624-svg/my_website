@@ -1,0 +1,463 @@
+/* ==============================
+   3. RESET
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #263247;
+  background: #ffffff;
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+/* ==============================
+   4. HEADER AND NAVIGATION
+============================== */
+.header {
+  background: #ffffff;
+  box-shadow: 0 4px 18px rgba(30, 50, 90, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  color: #3157a4;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.nav a {
+  color: #263247;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.nav a:hover {
+  color: #3157a4;
+}
+
+.theme-btn {
+  padding: 9px 13px;
+  border: 1px solid #3157a4;
+  border-radius: 8px;
+  background: transparent;
+  color: #3157a4;
+  cursor: pointer;
+}
+
+/* ==============================
+   5. HERO SECTION
+============================== */
+.hero {
+  background: linear-gradient(120deg, #edf2ff, #ffffff);
+  padding: 85px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 650px;
+}
+.hero-text .hello {
+  color: #3157a4;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.hero-text h1 {
+  color: #3157a4;
+  font-size: 48px;
+  margin: 8px 0;
+}
+.hero-text h2 {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.hero-text p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.primary-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #3157a4;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.primary-btn:hover {
+  background: #203f80;
+  transform: translateY(-2px);
+}
+
+.hero-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 230px;
+}
+
+.avatar-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3157a4, #8da9ed);
+  color: #ffffff;
+  font-size: 65px;
+  font-weight: bold;
+  box-shadow: 0 4px 18px rgba(30, 50, 90, 0.08);
+}
+
+/* ==============================
+   6. GENERAL SECTIONS
+============================== */
+.section {
+  padding: 65px 0;
+}
+
+.section-light {
+  background: #f5f7fc;
+}
+
+.section-title {
+  color: #3157a4;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.section-description {
+  color: #64748b;
+  text-align: center;
+  margin: 0 auto 30px;
+  max-width: 650px;
+}
+
+/* ==============================
+   7. ABOUT
+============================== */
+.about-content {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.about-text,
+.info-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(30, 50, 90, 0.08);
+}
+
+.about-text h3 {
+  color: #3157a4;
+  margin-bottom: 12px;
+}
+.about-text p {
+  margin-bottom: 12px;
+  color: #64748b;
+}
+
+.info-card h3 {
+  color: #3157a4;
+  margin-bottom: 15px;
+}
+.info-card p {
+  padding: 8px 0;
+  border-bottom: 1px solid #edf0f5;
+}
+
+/* ==============================
+   8. SKILLS
+============================== */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skill-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(30, 50, 90, 0.08);
+  transition: 0.3s;
+}
+.skill-card:hover {
+  transform: translateY(-4px);
+}
+.skill-card h3 {
+  color: #3157a4;
+  margin-bottom: 12px;
+}
+.skill-card p {
+  color: #64748b;
+  text-align: right;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.skill-bar {
+  height: 10px;
+  background: #e5eaf3;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #3157a4, #83a5ed);
+  border-radius: 20px;
+}
+
+/* ==============================
+   9. PROJECTS
+============================== */
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(30, 50, 90, 0.08);
+  border-top: 4px solid #3157a4;
+  transition: 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card h3 {
+  color: #3157a4;
+  margin-bottom: 12px;
+}
+.project-card p {
+  color: #64748b;
+  margin-bottom: 10px;
+}
+.project-card .project-tech {
+  color: #3157a4;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.error-message {
+  color: #dc2626;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ==============================
+   10. CONTACT
+============================== */
+.contact-form {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(30, 50, 90, 0.08);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d8deea;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #263247;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #3157a4;
+}
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-message {
+  margin-top: 15px;
+  color: #15803d;
+}
+
+/* ==============================
+   11. FOOTER
+============================== */
+.footer {
+  background: #1d2b49;
+  color: #ffffff;
+  text-align: center;
+  padding: 22px;
+}
+
+/* ==============================
+   12. DARK MODE
+============================== */
+body.dark-mode {
+  background: #151a25;
+  color: #e5e7eb;
+}
+body.dark-mode .header,
+body.dark-mode .about-text,
+body.dark-mode .info-card,
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode .contact-form {
+  background: #222a39;
+  color: #e5e7eb;
+}
+body.dark-mode .nav a {
+  color: #e5e7eb;
+}
+body.dark-mode .nav a:hover,
+body.dark-mode .logo {
+  color: #93b4ff;
+}
+body.dark-mode .theme-btn {
+  color: #93b4ff;
+  border-color: #93b4ff;
+}
+body.dark-mode .hero {
+  background: linear-gradient(120deg, #202c43, #151a25);
+}
+body.dark-mode .hero-text p,
+body.dark-mode .about-text p,
+body.dark-mode .section-description,
+body.dark-mode .project-card p {
+  color: #c0c9d8;
+}
+body.dark-mode .section-light {
+  background: #1b2230;
+}
+body.dark-mode .skill-card h3,
+body.dark-mode .project-card h3,
+body.dark-mode .about-text h3,
+body.dark-mode .info-card h3,
+body.dark-mode .section-title {
+  color: #93b4ff;
+}
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background: #151a25;
+  color: #ffffff;
+  border-color: #46536a;
+}
+body.dark-mode .info-card p {
+  border-color: #46536a;
+}
+
+/* ==============================
+   13. RESPONSIVE
+============================== */
+@media (max-width: 900px) {
+  .nav-container {
+    flex-wrap: wrap;
+    padding: 15px 0;
+  }
+  .nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .skills-list,
+  .projects-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    padding: 55px 0;
+  }
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  .hero-text h2 {
+    font-size: 19px;
+  }
+  .avatar-circle {
+    width: 160px;
+    height: 160px;
+    font-size: 48px;
+  }
+  .about-content,
+  .skills-list,
+  .projects-list {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    padding: 45px 0;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  .contact-form {
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
